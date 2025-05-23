@@ -1,10 +1,10 @@
-try:
-    name = input("Как тебя зовут? ")
-    age = int(input("Сколько тебе лет? "))
-    print(f"{name}, ты начал свой путь в Python. Дерзай!")
-    if age < 18:
-        print("Ты молод! Начинать рано — это преимущество.")
-    else:
-        print("Никогда не поздно!")
-except ValueError:
-    print("Ошибка: введите число для возраста!")
+m = int(input())
+n = int(input())
+if m < n:
+    for i in range(m, n + 1):
+        print(i)
+elif m > n:
+        for i in range(m, n - 1, - 1):
+            print(i)
+else:
+    print(m)
